@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <title>Industry 4.0 and connected manufacturing</title>
+</head>
+<body>
+    <style>
+        :root{
+            --f-size:1.5rem;
+        }
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            font-family: 'Mukta', sans-serif;
+        }
+        body{
+            height:100vh;
+            margin:1em;
+        }
+        .container{
+            height:100vh;
+             display: grid;
+              justify-content: center;
+             grid-template-columns: 240px 220px 220px;
+             grid-template-rows:260px 240px 260px;
+             gap:5px;
+            grid-template-areas: 
+            
+            "h  s  c "            
+             "h  i  m"
+             "u  f  f"
+ 
+                 
+                        
+
+
+
+   
+
+           
+        
+
+
+
+
+
+
+
+ 
+
+            
+            
+            }
+
+        .header{
+             grid-area:h;
+             background:red;
+
+        }
+        .header img{
+
+           width: 100%;
+           height:100%;
+          object-fit: cover;
+          display: block;
+          }
+        
+        .sidebar{
+            background:blue;
+            grid-area:s;
+            font-size:var( --f-size);
+        }
+        .sidebar img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            display: block;
+        }
+               
+         
+        
+        .content{
+            background:#5f27cd;
+            grid-area:c;
+            font-size:var( --f-size);
+            color:#ffff;
+
+
+        }
+        .content p{
+            padding:3rem;
+            line-height:1.3rem;
+            
+        }
+        .content .button{
+            margin-top:-1.7rem;
+        }
+       .content #btn{
+            background:black;
+            color:white;
+            text-align: center;
+            margin-left:50px;
+            padding:0.5rem;
+         }
+        
+                
+         
+        .images{
+            background:#ffff;
+            grid-area:i;
+            border:2px solid #e67e22;
+            font-size:var( --f-size);
+
+
+        }
+        .images h1{
+            padding:0.7rem;
+            margin-top:2.3rem;
+            margin-left:2.3rem;
+            color:#e67e22;
+           }
+        .middle{
+
+            background:orange;
+            grid-area:m;
+
+        }
+        .middle img{
+            width:100%;
+            height:100%;
+            object-fit:fill;
+            display: block;
+        }
+        .upper{
+            background:#e67e22;
+            grid-area:u;
+            font-size:var( --f-size);
+            --f-size:1rem;
+
+
+        }
+        .upper p{
+            padding:2rem;
+            text-align: start;
+            word-wrap: wrap;
+            color:#fff;
+        }
+        
+        .footer{
+            background:magenta;
+            grid-area:f;
+
+        
+        }
+        .footer img{
+            width:100%;
+            height:100%;
+            object-fit:fill;
+            display: block;
+        }
+
+        @media(max-width:767px){
+            .container{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                 margin-top:34.1rem;
+             
+            }
+            .content #btn{
+             
+             position:relative;
+             right:-19%;
+            }
+           }
+
+        
+    </style>
+    <div class = "container">
+    <div class = "header">
+        <img src = "em.jpg" alt="engineer1">
+         </div>
+    <div class = "sidebar">
+        <img src = "ar.jpg" alt="ar">
+      </div>
+    <div class = "content">
+        <p>How smart technology transforming the industrial world</p>
+        <div class = "button">
+        <button id="btn">Read More</button>
+        </div>
+        
+    </div>
+    <div class = "images">
+        <h1>Smart Factory</h1>
+    </div>
+    <div class = "middle">
+        <img src = "em2.jpg" alt="em2">
+    </div>
+    <div class = "upper">
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident</p>
+    </div>
+    <div class = "footer">
+        <img src = "em3.jpg" alt="em3">
+    </div>
+    </div>
+    
+</body>
+</html>
